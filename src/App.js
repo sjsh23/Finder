@@ -19,7 +19,8 @@ function App() {
       </header>
       <main>
         <section className="hero">
-          <h1>Temukan kos yang sesuai</h1>
+          <h1>FIN<br></br>DER</h1>
+          <h2>Temukan kos yang sesuai untuk dirimu dengan FINDER </h2>
           <button className="hero-button">Temukan Kos</button>
         </section>
         <section className="recommended-areas">
