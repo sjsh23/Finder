@@ -20,7 +20,7 @@ function App() {
       </header>
     </div>
   );
-}
+} 
 
 // Josh kita buat backendnya pake apa?
 
