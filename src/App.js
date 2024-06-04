@@ -36,7 +36,7 @@ function App() {
               'Yogyakarta'
             ].map((area) => (
               <div key={area} className="area-card">
-                <img src={`images/${area.toLowerCase()}.jpg`} alt={area} />
+                <img src={`${process.env.PUBLIC_URL}/Pic/${area.toLowerCase()}.jpg`} alt={area} />
                 <p>{area}</p>
               </div>
             ))}
