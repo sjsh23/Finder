@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';  // Make sure to create corresponding CSS to style the form
+import App from '/App.js';  
 
-function App() {
+function Login() {
 const [form, setForm] = useState({
     fullName: '',
     phoneNumber: '',

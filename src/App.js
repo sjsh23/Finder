@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import Login from './Login.js';
 
 function App() {
   return (
@@ -13,7 +15,7 @@ function App() {
           </div>
           <div className="navbar-menu">
             <a href="#">Cari Apa?</a>
-            <button>Masuk</button>
+            <Link to= '/Login.js'><button>Masuk</button></Link>
           </div>
         </nav>
       </header>
