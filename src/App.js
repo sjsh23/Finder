@@ -1,68 +1,21 @@
-import React from 'react';
-import './App.css';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import Login from './Login.js';
+import './App.css'
+import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import Header from './component/Header'
+import Footer from './component/Footer'
+import RegisterPage from './pages/RegisterPage'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <nav className="navbar">
-          <a href='/' className="navbar-brand">FINDER</a>
-          <div className="navbar-search">
-            <input type="text" placeholder="Masukkan nama lokasi/area/alamat" />
-            <button>Cari</button>
-          </div>
-          <div className="navbar-menu">
-            <a href="#">Cari Apa?</a>
-            <Link to= '/Login.js'><button>Masuk</button></Link>
-          </div>
-        </nav>
-      </header>
-      <main>
-        <section className="hero">
-          <h1>FIN<br></br>DER</h1>
-          <h2>Temukan kos yang sesuai untuk dirimu dengan FINDER </h2>
-          <button className="hero-button">Temukan Kos</button>
-        </section>
-        <section className="recommended-areas">
-          <h2>Rekomendasi Area Kos</h2>
-          <div className="area-cards">
-            {[
-              'Jakarta', 
-              'Bandung', 
-              'Tangerang', 
-              'Semarang', 
-              'Malang', 
-              'Surabaya', 
-              'Bali', 
-              'Yogyakarta'
-            ].map((area) => (
-              <div key={area} className="area-card">
-                <img src={`${process.env.PUBLIC_URL}/Pic/${area.toLowerCase()}.jpg`} alt={area} />
-                <p>{area}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-      </main>
-      <footer>
-        <div className="footer-content">
-          <p>Dapatkan "Info kost yang murah" hanya di Finder App. Mau "Sewa Kost Murah dan Nyaman"?</p>
-          <nav>
-            <a href="#">Tentang Kami</a>
-            <a href="#">Promosikan Kost Anda</a>
-            <a href="#">Pusat Bantuan</a>
-          </nav>
-          <div className="contact-info">
-            <p>HUBUNGI KAMI</p>
-            <p>cs@FINDER.com</p>
-            <p>+628969696969</p>
-          </div>
-        </div>
-      </footer>
-    </div>
-  );
-} 
+    <Router>
+      <Header />
+        <Routes>
+            <Route path='/HomePage' element={<HomePage />}/>
+            <Route path='/RegisterPage' element={<RegisterPage />}/>
+        </Routes>
+      <Footer />
+    </Router>   
+  )
+}
 
-export default App;
+export default App
