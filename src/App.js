@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <nav className="navbar">
-          <div className="navbar-brand">FINDER</div>
+          <a href='/' className="navbar-brand">FINDER</a>
           <div className="navbar-search">
             <input type="text" placeholder="Masukkan nama lokasi/area/alamat" />
             <button>Cari</button>
