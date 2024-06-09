@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import './Register.css'
 function Register() {
 const [form, setForm] = useState({
     fullName: '',
@@ -47,7 +47,7 @@ const handleSubmit = (e) => {
 };
 
 return (
-    <div className="App">
+    <div className="Register">
     <main>
         <h1>Daftar Akun</h1>
         <form onSubmit={handleSubmit}>
