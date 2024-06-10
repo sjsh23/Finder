@@ -140,6 +140,7 @@ footer {
   background-color: #383746;
   color: #fff;
   text-align: center;
+  position: sticky;
 }
 
 .footer-content p,
