@@ -8,7 +8,7 @@ const Header = () => {
                 <button>Cari</button>
             </div>
             <div className="navbar-menu">
-                <a href="#">Cari Apa?</a>
+                <a href="/KostPage">Cari Apa?</a>
                 <a href="/RegisterPage"><button>Masuk</button></a>
             </div>
             </nav>
