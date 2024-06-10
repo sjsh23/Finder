@@ -135,27 +135,3 @@ body {
   margin-top: 10px;
   font-size: 18px;
 }
-
-footer {
-  padding: 20px;
-  background-color: #383746;
-  color: #fff;
-  text-align: center;
-}
-
-.footer-content p,
-.footer-content nav a,
-.footer-content .contact-info p {
-  margin: 10px 0;
-}
-
-.footer-content nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-.footer-content nav a:hover {
-  text-decoration: underline;
-}
-

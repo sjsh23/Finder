@@ -25,7 +25,7 @@ const KostListPage = () => {
 
     return (
         <div>
-            <h1>Kost Dekat Binus</h1>
+            <h3>Kost Dekat Binus</h3>
             {kosts.map(kost => (
                 <KostCard
                     key={kost.title}
