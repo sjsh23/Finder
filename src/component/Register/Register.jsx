@@ -113,7 +113,7 @@ return (
         </label>
         <button type="submit">Daftar</button>
         </form>
-        <p>Sudah punya akun? <a href='/login'>Masuk di sini</a></p>
+        <p>Sudah punya akun? <a href='/LoginPage'>Masuk di sini</a></p>
     </main>
     </div>
 );
