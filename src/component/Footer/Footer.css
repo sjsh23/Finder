@@ -5,6 +5,7 @@
     justify-content: space-around;
     padding: 20px;
     font-family: Arial, sans-serif;
+    position: sticky;
 }
 
 .footer-section {
